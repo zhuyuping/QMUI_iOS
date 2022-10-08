@@ -157,14 +157,7 @@
 
 - (void)copyString:(id)sender {
     if (self.canPerformCopyAction) {
-        UIPasteboard *pasteboard = [UIPasteboard generalPasteboard];
-        NSString *stringToCopy = self.text;
-        if (stringToCopy) {
-            pasteboard.string = stringToCopy;
-            if (self.didCopyBlock) {
-                self.didCopyBlock(self, stringToCopy);
-            }
-        }
+        
     }
 }
 
